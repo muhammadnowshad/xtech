@@ -1,0 +1,612 @@
+/* 
+* Main CSS file for responsive agency HTML template 
+*/
+
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+h6{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #5a5a5a;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-primary{
+    color: #44C464;
+}
+.colored-text{
+    color: #44C464;
+    font-weight: bold;
+}
+
+.padding-120{
+    padding: 120px 0;
+}
+
+.my-btn{
+    background-color: #44C464;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px 40px;
+}
+.my-btn:hover{
+    background-color: #29a047;
+    color: #ffffff;
+}
+
+/* 
+* ============ Header Style Start ============
+*/
+.navbar-expand-md .navbar-nav .nav-link{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+.offcanvas-body .navbar-nav .nav-link{
+    color:#333333;
+    font-weight: 500;
+}
+
+.navbar-expand-md .navbar-nav .nav-link.active, .navbar-expand-md .navbar-nav .nav-link:hover{
+    color: #44C464;
+}
+.offcanvas-body .navbar-nav .nav-link.active, .offcanvas-body .navbar-nav .nav-link:hover{
+    color: #44C464;
+}
+
+.main-header{
+    height: 80px;
+}
+#site-header.sticky {
+    --bs-bg-opacity: 0.95;
+}
+a:hover{
+    color: #29a047;
+}
+.contact-btn{
+    background-color: #44C464;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px;
+    z-index: 5;
+}
+.contact-btn:hover{
+    background-color: #29a047;
+    color: #ffffff;
+}
+
+/* 
+* Hero Section
+*/
+#hero-section{
+    height: 950px;
+    background-image: url(./assets/img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#hero-section:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.hero-content{
+    position: relative;
+    z-index: 20;
+    color: #ffffff;
+    max-width: 950px;
+}
+.hero-content h1 {
+    margin: 50px 0;
+}
+.hero-content p {
+    font-weight: 500;
+    margin-bottom: 70px;
+    color: #ffffff;
+}
+.hero-buttons .btn{
+    margin: 0 10px;
+}
+.hero-buttons .btn-dark{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 15px 40px;
+}
+
+/* 
+* Stats Section
+*/
+.number{
+    color: #44C464;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* 
+* About Section
+*/
+.about-images div {
+    padding: 15px;
+}
+.about-images div:nth-child(3) {
+    margin-top: -3rem;
+}
+.about-images div img {
+    width: 100%;
+}
+.colored-hash{
+    color: #73a4aa;
+}
+
+/* 
+* Why Us Section
+*/
+.whyus-section {
+    background-color: #f7f7f7;
+    background-image: linear-gradient(to bottom, #f7f7f7 65%, #ffffff 35%);
+}
+.feature-box {
+    min-height: 380px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    border-radius: 5px;
+}
+.feature-box h4 {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+}
+.feature-box:hover h4 {
+    background-color: #44C464;
+    transition: .20s;
+}
+.feature-box#fbx-1 {
+    background-image: url(assets/img/whyus-1.jpg);
+}
+.feature-box#fbx-2 {
+    background-image: url(assets/img/whyus-2.jpg);
+}
+.feature-box#fbx-3 {
+    background-image: url(assets/img/whyus-3.jpg);
+}
+
+/* 
+* Services Section
+*/
+.service-box{
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+}
+.icon-box{
+    background-color: #44C464;
+}
+.icon-box img{
+    height: 50px;
+    width: 50px;
+}
+.service-box h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* 
+* Reviews Section
+*/
+.reviews-section{
+    background-image: url(assets/img/Revierw-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.reviews-section:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(110deg, rgba(0,0,0,0.8) 60%, rgba(255,255,255,0) 40%);
+}
+.review-content{
+    position: relative;
+    z-index: 10;
+}
+.testimonial-box{
+    padding: 40px;
+}
+.author-title span{
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* 
+* Team Section
+*/
+.team-section{
+    padding-top: 60px;
+}
+.social-profile a{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 30px;
+}
+.social-profile a:hover {
+    color: #44C464;
+    transition: .15s;
+}
+
+/* 
+* footer Section
+*/
+.footer-section{
+    margin-top: 150px;
+    padding: 50px 0px 30px 0px;
+}
+.footer-form-row{
+    height: 80px;
+    margin-top: -90px;
+}
+.contact-form{
+    position: relative;
+}
+.contact-form .user-email {
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    padding: 20px 35px;
+    left: 0;
+    top: 0;
+    border-radius: 50px 50px;
+}
+
+.contact-form .subscriber-btn {
+    position: absolute;
+    margin: 10px;
+    padding: 13px 24px;
+    right: 0;
+    top: 0;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #44C464;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.subscriber-btn:hover{
+    background-color: #29a047;
+}
+.footer-text {
+    font-size: 16px;
+}
+.footer-social a{
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+.footer-social a:hover {
+    color: #44C464;
+    transition: .15s;
+}
+.offcanvas-social {
+    width: 100%;
+    padding-top: 15px;
+}
+.offcanvas-social a {
+    color: #333333;
+    flex: 1;
+    font-size: 24px;
+}
+.footer-links{
+    padding: 0;
+}
+.footer-links ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.footer-links ul li a:hover {
+    color: #44C464;
+    transition: .15s;
+}
+.copy-right h6{
+    font-size: 18px;
+}
+
+/* mobile-devices */
+@media (max-width: 575.98px){
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    h5{
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+    }
+
+    .padding-120{
+        padding: 60px 0;
+    }
+
+    .my-btn{
+        font-weight: 500;
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+    .nav-toggle {
+        font-size: 30px;
+        color: #ffffff;
+    }
+    .main-header{
+        height: 60px;
+    }
+
+    #hero-section{
+        height: 850px;
+    }
+    .hero-buttons .btn{
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        padding: 15px 30px;
+    }
+    .hero-content p{
+        text-align: justify;
+    }
+    .hero-content h5{
+        font-size: 14px;
+    }
+    .hero-content h1{
+        margin: 40px 0;
+    }
+    .contact-btn{
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+    .about-images div {
+        padding: 10px;
+    }
+    
+    .feature-box h4{
+        font-size: 18px;
+    }
+
+    /* footer  */
+    .footer-form-row{
+        height: 60px;
+        margin-top: -80px;
+    }
+    .contact-form .user-email {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+    .contact-form .subscriber-btn{
+        margin: 10px;
+        padding: 7px 15px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .footer-text{
+        font-size: 14px;
+    }
+    .footer-social a{
+        font-size: 18px;
+        margin: 0 5px;
+    }
+    .footer-links ul li a{
+        padding: 0.125rem 0.5rem;
+    }
+}
+
+/* tablet-devices */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    h1{
+        font-size: 60px;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 600;
+    }
+    h3{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    h4{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    h5{
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    h6{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .padding-120{
+        padding: 100px 0;
+    }
+    .navbar-expand-md .navbar-nav .nav-link{
+        font-size: 16px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: 400;
+    }
+    .nav-toggle {
+        font-size: 40px;
+        color: #ffffff;
+        font-weight: 900;
+    }
+    .contact-btn{
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    
+    /* footer  */
+    .footer-form-row{
+        height: 70px;
+        margin-top: -85px;
+    }
+    .contact-form .user-email {
+        font-size: 18px;
+        padding: 18px 30px;
+    }
+    .contact-form .subscriber-btn {
+        margin: 7px;
+    }
+    .contact-form button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .footer-links ul li a{
+        padding: 0.125rem 0.5rem;
+    }
+}
+
+@media (min-width: 992px){
+     /* footer  */
+    .footer-links ul{
+        flex-direction: row;
+    }
+}
+
+/* laptop, desktop devices  */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+    }
+    .contact-btn{
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .whyus-text{
+        line-height: 1.6;
+    }
+    .about-images div {
+        padding: 10px;
+    }
+     /* footer  */
+    .contact-form button {
+        margin: 9.5px;
+        padding: 13.5px 20px;
+    }
+    .footer-links ul li a{
+        margin: 0 5px;
+    }
+}

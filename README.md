@@ -1,2 +1,2 @@
 # xtech
-https://xtech1.netlify.app/
+Website url : https://xtech1.netlify.app/
